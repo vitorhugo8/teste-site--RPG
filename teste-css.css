@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Keyes;
+    src: url('/home/mint/Downloads/keyes.zip') format('truetype');
+}
+
+@keyframes wave {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: vertical;
+    background: linear-gradient(45deg, #800080, #4CAF50, #800080);
+    background-size: 200% 200%;
+    animation: wave 20s ease infinite;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  #hello {
+    font-family: Keyes, sans-serif;
+    font-size: 120px;
+    color: #800080; /* Roxo escuro */
+}
